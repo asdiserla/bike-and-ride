@@ -17,7 +17,9 @@ cd bike-and-ride
 
 ## 2. Create a virtual environment
 ### Create a virtual environment
+```bash
 python -m venv venv
+```
 
 ### Activate it
 🪟 On Windows:
