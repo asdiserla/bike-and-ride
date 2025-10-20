@@ -1,0 +1,53 @@
+# 🐍 Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# 📦 Virtual environment
+venv/
+.env/
+.venv/
+
+# 🧰 IDE / Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# 🧪 Testing / Logs
+*.log
+*.tmp
+*.bak
+*.db
+*.sqlite3
+
+# 📊 Cache and metadata
+.cache/
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# 🎵 Audio or large media files (optional)
+*.wav
+*.mp3
+*.ogg
+*.flac
+
+# ⚙️ OS files
+.DS_Store
+Thumbs.db
+
+# 🧠 Environment / secrets
+.env
+*.env
+*.key
+*.json
+token.txt
+
+# 🧰 Build / Distribution
+build/
+dist/
+*.egg-info/
