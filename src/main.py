@@ -1,10 +1,6 @@
 
 import time
-import random
-import datetime
 import serial
-import pygame
-
 from sound_manager import SoundManager
 
 ser = serial.Serial('/dev/cu.usbmodem1101', 9600, timeout=1)
