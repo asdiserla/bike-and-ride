@@ -43,3 +43,13 @@ Make sure your virtual environment is activated, then run:
 ```bash
 python main.py
 ```
+
+---
+
+####  ![Malmö University Logo](/src/images/maulogo.png) Malmö University — MA Interaction Design <br>
+
+**Designers** <br>
+Ásdís Erla Jóhannsdóttir <br>
+Elvina Bång <br>
+Isabella Mosteller <br>
+Jovan Borcic
