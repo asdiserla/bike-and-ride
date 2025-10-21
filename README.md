@@ -1,4 +1,4 @@
-# Bike and Ride Project 🚲🎵
+# Bikephonic 🚲🎵
 
 This project connects sound playback and serial communication for a gamified bike parking experience.  
 It uses Python with libraries like `pygame`, and `pyserial`.
