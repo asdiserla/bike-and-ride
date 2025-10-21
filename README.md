@@ -46,8 +46,11 @@ python main.py
 
 ---
 
-#### <img src="/src/images/maulogo.png" width="20" height="25" style="display: inline-block"> Malmö University — MA Interaction Design <br>
-
+<div style="display: flex; align-items: center;">
+<img src="/src/images/maulogo.png" width="20" height="25" style="display: inline-block; margin-right: 8px">
+<p style="font-weight: bold">Malmö University — MA Interaction Design</p>
+</div>
+  
 **Designers** <br>
 Ásdís Erla Jóhannsdóttir <br>
 Elvina Bång <br>
