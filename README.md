@@ -46,7 +46,7 @@ python main.py
 
 ---
 
-<img src="src/images/maulogo.png" width="20" height="25" align="left" style="margin-right:2px;" />
+<img src="src/images/maulogo.png" width="20" height="25" align="left" />
 
 **Malmö University — MA Interaction Design**
 
