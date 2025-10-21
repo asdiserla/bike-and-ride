@@ -46,7 +46,7 @@ python main.py
 
 ---
 
-#### Malmö University — MA Interaction Design <br>
+#### ![Malmö University Logo](/src/images/maulogo.png) Malmö University — MA Interaction Design <br>
 
 **Designers** <br>
 Ásdís Erla Jóhannsdóttir <br>
