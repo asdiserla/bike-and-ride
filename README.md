@@ -1,4 +1,4 @@
-# Bike and Ride Project 🚲🎵
+# Bikephonic 🚲🎵
 
 This project connects sound playback and serial communication for a gamified bike parking experience.  
 It uses Python with libraries like `pygame`, and `pyserial`.
@@ -46,8 +46,12 @@ python main.py
 
 ---
 
-####  ![Malmö University Logo](/src/images/maulogo.png) Malmö University — MA Interaction Design <br>
+<img src="src/images/maulogo.png" width="20" height="25" align="left" />
 
+**Malmö University — MA Interaction Design**
+
+<br clear="left" />
+  
 **Designers** <br>
 Ásdís Erla Jóhannsdóttir <br>
 Elvina Bång <br>
