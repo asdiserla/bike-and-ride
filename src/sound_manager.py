@@ -1,6 +1,6 @@
 import pygame
 import random
-from config import SEASON_SOUNDS, VOLUME_TIME_OF_DAY, DING_SOUND_PATH
+from config import SEASON_SOUNDS, VOLUME_TIME_OF_DAY, DING_ON_SOUND_PATH, DING_OFF_SOUND_PATH
 from utils import get_time_of_day
 from seasons import get_season
 import datetime
@@ -11,8 +11,10 @@ class SoundManager:
     def __init__(self):
         self.current_sound = None
         self.current_sound_name = None
+        self.current_name = None
         self.is_playing = False
-        self.ding_sound = pygame.mixer.Sound(DING_SOUND_PATH)
+        self.ding_on_sound = pygame.mixer.Sound(DING_ON_SOUND_PATH)
+        self.ding_off_sound = pygame.mixer.Sound(DING_OFF_SOUND_PATH)
 
     def get_current_season_sounds(self):
         today = datetime.date.today()
@@ -41,19 +43,24 @@ class SoundManager:
             print("No free audio channels available!")
             return
 
-        ding_channel.play(self.ding_sound)
+        ding_channel.play(self.ding_on_sound)
         while ding_channel.get_busy():
             pygame.time.wait(10)
 
         # Play seasonal sound
         seasonal_channel.play(self.current_sound, loops=-1, fade_ms=1000)
         self.is_playing = True
-        print(f"Now playing: {self.current_sound_name}")
+        sound_name_strings = self.current_sound_name.split('/')
+        self.current_name = sound_name_strings[-1]
+        print(f"Now playing: {self.current_name}")
 
     def stop_sound(self):
         if self.is_playing and self.current_sound:
-            print(f"Stopping sound: {self.current_sound_name}")
+            print(f"Stopping sound: {self.current_name}")
+
             self.current_sound.fadeout(1000)
+            current_channel = pygame.mixer.find_channel()
+            current_channel.play(self.ding_off_sound)
             self.is_playing = False
             self.current_sound = None
             self.current_sound_name = None

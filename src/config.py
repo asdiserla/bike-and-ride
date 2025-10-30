@@ -5,21 +5,21 @@ SOUND_DIR = os.path.join(BASE_DIR, "sounds")
 
 SEASON_SOUNDS = {
     "Spring": [
-        os.path.join(SOUND_DIR, "bird1.wav"),
-        os.path.join(SOUND_DIR, "bird2.wav"),
-        os.path.join(SOUND_DIR, "bird3.wav"),
+        os.path.join(SOUND_DIR, "blackbird.wav"),
+        os.path.join(SOUND_DIR, "blackbird.wav"),
+        os.path.join(SOUND_DIR, "blackbird.wav"),
     ],
     "Summer": [
-        os.path.join(SOUND_DIR, "bird3.wav"),
-        os.path.join(SOUND_DIR, "bird5.wav"),
+        os.path.join(SOUND_DIR, "blackbird.wav"),
+        os.path.join(SOUND_DIR, "blackbird.wav"),
     ],
     "Autumn": [
-        os.path.join(SOUND_DIR, "bird1.wav"),
-        os.path.join(SOUND_DIR, "bird2.wav"),
+        os.path.join(SOUND_DIR, "blackbird.wav"),
+        os.path.join(SOUND_DIR, "blackbird.wav"),
     ],
     "Winter": [
-        os.path.join(SOUND_DIR, "bird3.wav"),
-        os.path.join(SOUND_DIR, "bird4.wav"),
+        os.path.join(SOUND_DIR, "blackbird.wav"),
+        os.path.join(SOUND_DIR, "blackbird.wav"),
     ],
 }
 
@@ -30,4 +30,5 @@ VOLUME_TIME_OF_DAY = {
     "night": 0.5
 }
 
-DING_SOUND_PATH = os.path.join(SOUND_DIR, "ding.mp3.wav")
+DING_ON_SOUND_PATH = os.path.join(SOUND_DIR, "ding_on.wav")
+DING_OFF_SOUND_PATH = os.path.join(SOUND_DIR, "ding_off.wav")
